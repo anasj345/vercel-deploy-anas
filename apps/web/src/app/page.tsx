@@ -1,7 +1,9 @@
 import { User } from "@/types/user";
 
 export default async function HomePage() {
-  const response = await fetch("http://localhost:8000/api/v1/users");
+  const response = await fetch(
+    "https://vercel-deploy-anas-web.vercel.app/api/v1/users"
+  );
   const users = await response.json();
 
   console.log(users);
