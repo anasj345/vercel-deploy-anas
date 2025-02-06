@@ -12,9 +12,9 @@ export default async function HomePage() {
     <section>
       {users.data.map((user: User) => {
         return (
-          <div key={users.id}>
-            <p>Name: {users.name}</p>
-            <p>Email: {users.email}</p>
+          <div key={user.id}>
+            <p>Name: {user.name}</p>
+            <p>Email: {user.email}</p>
           </div>
         );
       })}
